@@ -1,7 +1,7 @@
 file {'/usr/local/bin/run-puppet':
 ensure => file,
-content => '/etc/puppetlabs/code/environments/production/files/run-puppet.sh',
-mode => '0755',
+source=> '/etc/puppetlabs/code/environments/production/files/run-puppet.sh',
+mode => '0777',
 }
 
 cron {'run-puppet':
