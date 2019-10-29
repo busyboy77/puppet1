@@ -8,7 +8,7 @@ ensure => present,
 uid => '4001',
 home => '/home/nmr',
 shell => '/bin/bash',
-managehome => '/home/nmr',
+managehome => true,
 groups => ['devs','wheel'],
 password => '$1$B1Xk37Bx$9V3sCfBgxXJwmlO/.wCeg/',
 }
