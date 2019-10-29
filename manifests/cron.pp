@@ -1,8 +1,8 @@
 cron {'cron example':
 command => '/bin/date +%F',
-hour => '*',
+user => 'nmr',
+hour => '0',
 minute => '0',
 environment => ['MAILTO=nmr','PATH=/bin'],
-user => 'nmr',
-weekday => ['0','2'',4','5','6'],
+weekday => ['Saturday','Sunday','Monday','Tuesday','Wednesday','Thursday','Friday'],
 }
