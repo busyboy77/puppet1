@@ -1,6 +1,6 @@
 cron {'cron example':
 command => '/bin/date +%F'
-hour => '*',
+hours => '*',
 minute => '0',
 environment => ['MAILTO=nmr','PATH=/bin'],
 user => 'nmr',
